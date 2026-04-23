@@ -1,0 +1,10 @@
+# Detén el contenedor primero con Ctrl+C, luego:
+cat > ~/dc-dashboard/.dockerignore << 'EOF'
+venv/
+.git/
+.github/
+infra/
+__pycache__/
+*.pyc
+.env
+EOF
