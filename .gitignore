@@ -1,10 +1,15 @@
-# Detén el contenedor primero con Ctrl+C, luego:
-cat > ~/dc-dashboard/.dockerignore << 'EOF'
-venv/
-.git/
-.github/
-infra/
+# Terraform
+infra/.terraform/
+infra/.terraform.lock.hcl
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
+infra/terraform.tfvars
+
+# Python
 __pycache__/
 *.pyc
 .env
-EOF
+venv/
+
+# OS
+.DS_Store
